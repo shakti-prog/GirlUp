@@ -140,8 +140,8 @@ import {
               </Stack>
             </Stack>
           </SimpleGrid>
-          {/* <Divider/>
-         <Box>
+          {/*<Divider/>
+          <Box>
             <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
               <Stack spacing={0} align={"center"}>
                 <Heading><Text fontWeight={1000}>Founder</Text></Heading>

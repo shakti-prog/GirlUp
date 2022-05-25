@@ -55,6 +55,7 @@ export const BlogAuthor = (props) => {
 const ArticleList = () => {
 
   const Router = useRouter();
+  const col1 = useColorModeValue("gray.700", "gray.200")
 
 
   return (
@@ -121,7 +122,7 @@ const ArticleList = () => {
                 <Text
                   as="p"
                   marginTop="2"
-                  color={useColorModeValue("gray.700", "gray.200")}
+                  color={col1}
                   fontSize="lg"
                   noOfLines={8}
                   

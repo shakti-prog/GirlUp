@@ -160,7 +160,7 @@ export default function ContactFormWithSocialButtons() {
                       <FormLabel>Name</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<BsPerson />} />
+                       
                         <Input
                           type="text"
                           name="name"
@@ -175,7 +175,7 @@ export default function ContactFormWithSocialButtons() {
                       <FormLabel>Email</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<MdOutlineEmail />} />
+                      
                         <Input
                           type="email"
                           name="email"

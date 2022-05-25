@@ -9,8 +9,9 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
-  Text,useBreakpointValue
+  Text
 } from '@chakra-ui/react';
+import React from 'react'
 
 
 
@@ -21,8 +22,9 @@ const Links = [{name:'Home',Link:"/"}, {name:'About Us',Link:'/About'}, {name:'B
 
 
 
-function NavLink(link) {
+function NavLink(link,index) {
   return (
+    <React.Fragment key={index}>
     <Link
       px={2}
       py={1}
@@ -35,12 +37,16 @@ function NavLink(link) {
     >
       <Text fontWeight={600} fontSize={'xl'}>{link.name}</Text>
     </Link>
+    </React.Fragment>
   );
 }
 
-export default function withAction() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const { toggleColorMode, colorMode } = useColorMode();
+export default function WithAction() {
+ const closure = useDisclosure();
+ const color = useColorMode();
+
+  const { isOpen, onOpen, onClose } = closure;
+  const { toggleColorMode, colorMode } = color;
 
   return (
     <>
@@ -60,8 +66,8 @@ export default function withAction() {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link) => (
-                NavLink(link)
+              {Links.map((link,index) => (
+                NavLink(link,index)
               ))}
             </HStack>
           </HStack>
@@ -114,8 +120,8 @@ export default function withAction() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
-              {Links.map((link) => (
-                NavLink(link)
+              {Links.map((link,index) => (
+                NavLink(link,index)
               ))}
             </Stack>
           </Box>

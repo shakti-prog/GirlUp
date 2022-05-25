@@ -7,6 +7,9 @@ import SmallCentered from '../../components/footer'
 
 
 export default function WithLargeQuote() {
+   
+  const col1 = useColorModeValue('gray.50', 'gray.900')
+  const col2 = useColorModeValue('gray.700', 'gray.200')
 
   const router = useRouter();
   if(router==undefined){
@@ -26,8 +29,8 @@ export default function WithLargeQuote() {
   return (
      <> 
     <Nav/>
-    <Box bg={useColorModeValue('gray.50', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')} 
+    <Box bg={col1}
+      color={col2} 
       position={'relative'}
       width={'auto'}  
       height={'auto'}
@@ -56,11 +59,11 @@ export default function WithLargeQuote() {
               <Heading
               
                 mb={5}
-                color={useColorModeValue('gray.700', 'gray.200')}
+                color={col2}
                 fontSize={{ base: '3xl', md: '5xl' }}>
                 {articles[ind-1]["Title"]}
               </Heading>
-              <Text fontSize={'xl'} color={useColorModeValue('gray.700', 'gray.200')}>
+              <Text fontSize={'xl'} color={col2}>
                 {articles[ind-1]["Content"]}
               </Text>
             </Box>
