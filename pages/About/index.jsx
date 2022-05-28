@@ -97,7 +97,7 @@ import {
                 }
               >
                 <VStack spacing={{ base: 4, sm: 6 }}>
-                  <Text fontSize={"xl"} fontFamily={"cursive"}>
+                  <Text fontSize={"xl"} fontFamily={"fantasy"}>
                     GirlUp Athena is part of the GirlUp campaign which is a
                     branch of the United Nations Foundation. We host drives,
                     write articles, arranging events, webinars and marathons for
@@ -178,7 +178,7 @@ import {
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign={"center"}
                   maxW={"4xl"}
-                  fontFamily={"cursive"}
+                  fontFamily={"fantasy"}
                 >
                   She’s an adventure child, a dark chocolate enthusiast and a
                   bibliophile. She tries her best at working hard and is quite
