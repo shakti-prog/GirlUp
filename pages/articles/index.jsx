@@ -98,7 +98,7 @@ const ArticleList = () => {
                   color={col1}
                   fontSize="xl"
                   noOfLines={5}
-                  fontFamily={"cursive"}
+                  fontFamily={"fantasy"}
                 >
                   {art["Content"]}
                 </Text>

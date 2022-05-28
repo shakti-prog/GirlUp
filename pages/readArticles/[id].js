@@ -71,7 +71,7 @@ export default function WithLargeQuote() {
                   alignItems="center"
                 >
                   <Text>—</Text>
-                  <Text fontFamily={"cursive"} fontSize={"large"} color={col2}>
+                  <Text fontFamily={"fantasy"} fontSize={"large"} color={col2}>
                     {articles[ind - 1]["Authors"]}
                   </Text>
                 </HStack>

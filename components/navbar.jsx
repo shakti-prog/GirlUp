@@ -35,7 +35,7 @@ function NavLink(link,index) {
       }}
       href={link.Link}
     >
-      <Text fontWeight={600} fontSize={'2xl'} fontFamily={'cursive'}>{link.name}</Text>
+      <Text fontWeight={600} fontSize={'2xl'} fontFamily={'fantasy'}>{link.name}</Text>
     </Link>
     </React.Fragment>
   );
