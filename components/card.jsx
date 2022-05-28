@@ -8,8 +8,6 @@ import {
     Image,
   } from '@chakra-ui/react';
   
-  const IMAGE =
-    'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
   
   export default function Card(props) {
     return (
@@ -39,12 +37,11 @@ import {
             />
           </Box>
           <Stack align={'center'}>
-          
-            <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
+            <Heading fontSize={'3xl'} fontFamily={'fantasy'} fontWeight={800}>
               {props.name}
             </Heading>
             <Stack direction={'row'} align={'center'}>
-              <Text fontWeight={800} fontSize={'xl'}>
+              <Text fontWeight={400} fontSize={'xl'} fontFamily={'cursive'}>
                 {props.role}
               </Text>
             </Stack>

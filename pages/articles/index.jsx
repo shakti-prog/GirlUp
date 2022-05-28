@@ -7,7 +7,6 @@ import {
   Text,
   Divider,
   HStack,
-  Tag,
   useColorModeValue,
   Container,
   Button
@@ -16,41 +15,6 @@ import {
 import Nav from '../../components/navbar';
 import articles from '../../staticData/articleData';
 import { useRouter } from 'next/router';
-
-
-
-
-const BlogTags = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
-            {tag}
-          </Tag>
-        );
-      })}
-    </HStack>
-  );
-};
-
-
-
-export const BlogAuthor = (props) => {
-  return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Image
-        borderRadius="full"
-        boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
-        alt={`Avatar of ${props.name}`}
-      />
-      <Text fontWeight="medium"></Text>
-      <Text>—</Text>
-      <Text></Text>
-    </HStack>
-  );
-};
 
 const ArticleList = () => {
 
@@ -62,8 +26,10 @@ const ArticleList = () => {
     <>
       <Nav />
       <Container maxW={"7xl"} p="12">
-        <Heading as="h1">Blogs by GirlUp Athena</Heading>
-        {articles.map((art,i) => (
+        <Heading as="h1" fontFamily={"fantasy"}>
+          Blogs by GirlUp Athena
+        </Heading>
+        {articles.map((art, i) => (
           <React.Fragment key={i}>
             <Box
               marginTop={{ base: "1", sm: "5" }}
@@ -97,11 +63,7 @@ const ArticleList = () => {
                   </Link>
                 </Box>
                 <Box zIndex="1" width="100%" position="absolute" height="100%">
-                  <Box
-                    backgroundSize="20px 20px"
-                    opacity="0.4"
-                    height="100%"
-                  />
+                  <Box backgroundSize="20px 20px" opacity="0.4" height="100%" />
                 </Box>
               </Box>
               <Box
@@ -113,35 +75,46 @@ const ArticleList = () => {
               >
                 <Heading marginTop="1">
                   <Link
+                   fontWeight={800}
                     textDecoration="none"
                     _hover={{ textDecoration: "none" }}
+                    fontFamily={"fantasy"}
                   >
-                   {art["Title"]}
+                    {art["Title"].toUpperCase()}
                   </Link>
                 </Heading>
+                <HStack
+                  marginTop="2"
+                  spacing="2"
+                  display="flex"
+                  alignItems="center"
+                >
+                  <Text>—</Text>
+                  <Text fontFamily={'cursive'} fontWeight={600} fontSize={'large'}>{art["Authors"]}</Text>
+                </HStack>
                 <Text
                   as="p"
                   marginTop="2"
                   color={col1}
-                  fontSize="lg"
-                  noOfLines={8}
-                  
+                  fontSize="xl"
+                  noOfLines={5}
+                  fontFamily={"cursive"}
                 >
-                 {art["Content"]}
+                  {art["Content"]}
                 </Text>
                 <Button
                   bg={"blue.400"}
-                  marginTop={'4'}
+                  marginTop={"4"}
                   color={"white"}
-                  marginBottom={'4'}
+                  marginBottom={"4"}
+                  fontFamily={'fantasy'}
                   _hover={{ bg: "blue.500" }}
-                  width={'40'}
-                  onClick={()=>Router.push(`readArticles/${i+1}`)}
+                  width={"40"}
+                  onClick={() => Router.push(`readArticles/${i + 1}`)}
                 >
                   Read More
                 </Button>
                 {/*<BlogAuthor/> */}
-              
               </Box>
             </Box>
 
@@ -149,8 +122,6 @@ const ArticleList = () => {
           </React.Fragment>
         ))}
       </Container>
-      
-     
     </>
   );
 };

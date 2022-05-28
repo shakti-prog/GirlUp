@@ -1,8 +1,7 @@
-import MainScreen from './tp'
+//import MainScreen from './tp'
 import Nav from '../components/navbar'
-import { Box } from '@chakra-ui/react';
-import SmallCentered from '../components/footer';
 import dynamic  from "next/dynamic";
+import MainScreen from '../components/main';
 
 const Scroll = dynamic(
   () => {
@@ -13,7 +12,7 @@ const Scroll = dynamic(
 
 const Main = dynamic(
   () => {
-    return import('./tp');
+    return import('./About');
   },
   { ssr: false }
 );
@@ -21,9 +20,8 @@ const Main = dynamic(
 export default function Home() {
   return (
     <>
-      <Scroll/>
-      <Main/>
-      
+      <Nav/>
+      <MainScreen/> 
     </>
   );
 }

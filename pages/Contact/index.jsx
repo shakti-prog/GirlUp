@@ -101,6 +101,7 @@ export default function ContactFormWithSocialButtons() {
                   base: "4xl",
                   md: "5xl",
                 }}
+                fontFamily={'fantasy'}
               >
                 Share your story
               </Heading>
@@ -207,6 +208,7 @@ export default function ContactFormWithSocialButtons() {
                         bg: "blue.500",
                       }}
                       onClick={handleSubmit}
+                      fontFamily={'fantasy'}
                       
                     >
                       Send

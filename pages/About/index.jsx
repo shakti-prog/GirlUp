@@ -14,7 +14,6 @@ import {
     VisuallyHidden,
     Grid,
     Divider,
-    Avatar
   } from '@chakra-ui/react';
   import Nav from '../../components/navbar'
   import { FaInstagram,FaFacebook,FaLinkedinIn} from 'react-icons/fa';
@@ -74,6 +73,7 @@ import {
                   lineHeight={1.1}
                   fontWeight={600}
                   fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
+                  fontFamily={"fantasy"}
                 >
                   GirlUp Athena
                 </Heading>
@@ -81,6 +81,7 @@ import {
                   color={useColorModeValue("gray.900", "gray.400")}
                   fontWeight={300}
                   fontSize={"2xl"}
+                  fontFamily={"cursive"}
                 >
                   Community based in Maharashtra. India.
                 </Text>
@@ -96,7 +97,7 @@ import {
                 }
               >
                 <VStack spacing={{ base: 4, sm: 6 }}>
-                  <Text fontSize={"lg"}>
+                  <Text fontSize={"xl"} fontFamily={"cursive"}>
                     GirlUp Athena is part of the GirlUp campaign which is a
                     branch of the United Nations Foundation. We host drives,
                     write articles, arranging events, webinars and marathons for
@@ -115,6 +116,7 @@ import {
                     color={useColorModeValue("yellow.500", "yellow.300")}
                     fontWeight={"500"}
                     textTransform={"uppercase"}
+                    fontFamily={"fantasy"}
                     mb={"4"}
                   >
                     Social Media
@@ -140,11 +142,15 @@ import {
               </Stack>
             </Stack>
           </SimpleGrid>
-          {/*<Divider/>
+          <Divider />
           <Box>
             <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
               <Stack spacing={0} align={"center"}>
-                <Heading><Text fontWeight={1000}>Founder</Text></Heading>
+                <Heading>
+                  <Text fontWeight={1000} fontFamily={"fantasy"}>
+                    Founder
+                  </Text>
+                </Heading>
               </Stack>
               <Stack
                 py={4}
@@ -155,28 +161,39 @@ import {
               >
                 <Box textAlign={"center"}>
                   <Image
-                   borderRadius={'full'}
-                    src={
-                      "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-                    }
-                    mb={2}
+                    borderRadius={"full"}
+                    src={"Founder/Zeel Patel_Founder.jpeg"}
+                    boxSize={{ sm: 300, md: 450 }}
+                    mb={4}
                   />
-                  <Text fontWeight={600} fontSize={'lg'}>Zeel Patel</Text>
+                  <Text
+                    fontWeight={600}
+                    fontSize={"2xl"}
+                    fontFamily={"cursive"}
+                  >
+                    Zeel Patel
+                  </Text>
                 </Box>
                 <Text
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign={"center"}
-                  maxW={"3xl"}
+                  maxW={"4xl"}
+                  fontFamily={"cursive"}
                 >
-                  We had an incredible experience working with Chakra Templates
-                  and were impressed they made such a big difference in only
-                  three weeks. Our team is so grateful for the wonderful
-                  improvements they made and their ability to get familiar with
-                  the product concept so quickly.
+                  She’s an adventure child, a dark chocolate enthusiast and a
+                  bibliophile. She tries her best at working hard and is quite
+                  the scatter brain. Currently studying engineering, she also
+                  has her own YouTube channel, loves traveling and basketball.
+                  GirlUp provided her a platform to lead a community of
+                  like-minded people working towards empowering women and
+                  creating new opportunities. She is quite vocal about the
+                  various issues present in our world and is driven to leave her
+                  mark on the journey towards eradicating gender inequalities.
                 </Text>
               </Stack>
             </Container>
-                  </Box> */}
+          </Box>{" "}
+          *
         </Container>
       </>
     );
