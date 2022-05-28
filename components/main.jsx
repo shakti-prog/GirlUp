@@ -40,8 +40,8 @@ import {
                 color={"white"}
                 fontWeight={600}
                 lineHeight={1}
-                fontSize={useBreakpointValue({ base: "2xl", md: "3xl" })}
-                fontFamily={'cursive'}
+                fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
+                fontFamily={'fantasy'}
               >
                 GirlUp Athena is part of the GirlUp Campaign initiated by the
                 United Nations Foundation. We’re a community working towards
