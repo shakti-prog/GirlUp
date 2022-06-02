@@ -185,7 +185,7 @@ import {
                   empowering women and creating new opportunities. She is quite
                   vocal about the various issues present in our world and is
                   driven to leave her mark on the journey towards eradicating
-                  gender inequalities"
+                  gender inequalities
                 </Text>
               </Stack>
             </Container>
