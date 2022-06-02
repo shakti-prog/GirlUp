@@ -180,15 +180,12 @@ import {
                   maxW={"4xl"}
                   fontFamily={"fantasy"}
                 >
-                  She’s an adventure child, a dark chocolate enthusiast and a
-                  bibliophile. She tries her best at working hard and is quite
-                  the scatter brain. Currently studying engineering, she also
-                  has her own YouTube channel, loves traveling and basketball.
-                  GirlUp provided her a platform to lead a community of
-                  like-minded people working towards empowering women and
-                  creating new opportunities. She is quite vocal about the
-                  various issues present in our world and is driven to leave her
-                  mark on the journey towards eradicating gender inequalities.
+                  She founded Girl Up Athena in July of 2020. Girl Up provided
+                  her a platform to lead like-minded people working towards
+                  empowering women and creating new opportunities. She is quite
+                  vocal about the various issues present in our world and is
+                  driven to leave her mark on the journey towards eradicating
+                  gender inequalities"
                 </Text>
               </Stack>
             </Container>
