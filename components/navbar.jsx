@@ -18,7 +18,7 @@ import React from 'react'
 
 
 
-const Links = [{name:'Home',Link:"/"}, {name:'About Us',Link:'/About'}, {name:'Blogs',Link:"/articles"},{name:'Team',Link:"/Team"},{name:'Share a story',Link:"/Contact"}];
+const Links = [{name:'Home',Link:"/"}, {name:'About Us',Link:'/About'}, {name:'Blogs',Link:"/articles"},{name:'Team',Link:"/Team"},{name:'Share a story',Link:"/Contact"},{name:'Gallery',Link:"/Gallery"}];
 
 
 

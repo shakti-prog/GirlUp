@@ -1,0 +1,27 @@
+const gallery_data = [
+'Gallery/img1.jpeg',
+'Gallery/img2.jpeg',
+'Gallery/img3.jpeg',
+'Gallery/img4.jpeg',
+'Gallery/img5.jpeg',
+'Gallery/img6.jpeg',
+'Gallery/img7.jpeg',
+'Gallery/img8.jpeg',
+'Gallery/img9.jpeg',
+'Gallery/img10.jpeg',
+'Gallery/img11.jpeg',
+'Gallery/img12.jpeg',
+'Gallery/img13.jpeg',
+'Gallery/img14.jpeg',
+'Gallery/img15.jpeg',
+'Gallery/img16.jpeg',
+'Gallery/img17.jpeg',
+'Gallery/img18.jpeg',
+'Gallery/img19.jpeg',
+'Gallery/img20.jpeg',
+'Gallery/img21.jpeg',
+'Gallery/img22.jpeg',
+'Gallery/img23.jpeg',
+]
+
+export default gallery_data;
