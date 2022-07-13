@@ -32,7 +32,6 @@ import {
                 fontWeight={1000}
                 lineHeight={1.2}
                 fontSize={useBreakpointValue({ base: "4xl", md: "6xl" })}
-                fontFamily={'fantasy'}
               >
                 GirlUp Athena
               </Text>
@@ -41,7 +40,6 @@ import {
                 fontWeight={600}
                 lineHeight={1}
                 fontSize={useBreakpointValue({ base: "xl", md: "2xl" })}
-                fontFamily={'fantasy'}
               >
                 GirlUp Athena is part of the GirlUp Campaign initiated by the
                 United Nations Foundation. We’re a community working towards

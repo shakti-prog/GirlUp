@@ -23,8 +23,8 @@ export default function GridBlurredBackdrop() {
       <Nav />
       <Tabs align="center" marginTop={'4'} variant='enclosed'>
         <TabList>
-          <Tab fontFamily={'fantasy'} fontSize={'x-large'}>2021-22</Tab>
-          <Tab fontFamily={'fantasy'} fontSize={'x-large'} >2020-21</Tab>
+          <Tab  fontSize={'x-large'}>2021-22</Tab>
+          <Tab  fontSize={'x-large'} >2020-21</Tab>
         </TabList>
         <TabPanels>
           <TabPanel>
@@ -39,7 +39,6 @@ export default function GridBlurredBackdrop() {
                 <chakra.h1
                   py={3}
                   fontSize={32}
-                  fontFamily={"fantasy"}
                   fontWeight={"bold"}
                   color={useColorModeValue("gray.700", "gray.50")}
                 >
@@ -77,7 +76,6 @@ export default function GridBlurredBackdrop() {
                 <chakra.h1
                   py={3}
                   fontSize={32}
-                  fontFamily={"fantasy"}
                   fontWeight={"bold"}
                   color={useColorModeValue("gray.700", "gray.50")}
                 >

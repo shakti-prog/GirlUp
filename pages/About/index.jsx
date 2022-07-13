@@ -73,7 +73,7 @@ import {
                   lineHeight={1.1}
                   fontWeight={600}
                   fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
-                  fontFamily={"fantasy"}
+                 
                 >
                   GirlUp Athena
                 </Heading>
@@ -81,7 +81,7 @@ import {
                   color={useColorModeValue("gray.900", "gray.400")}
                   fontWeight={300}
                   fontSize={"2xl"}
-                  fontFamily={"cursive"}
+                 
                 >
                   Community based in Maharashtra. India.
                 </Text>
@@ -97,7 +97,7 @@ import {
                 }
               >
                 <VStack spacing={{ base: 4, sm: 6 }}>
-                  <Text fontSize={"xl"} fontFamily={"fantasy"}>
+                  <Text fontSize={"xl"}>
                     GirlUp Athena is part of the GirlUp campaign which is a
                     branch of the United Nations Foundation. We host drives,
                     write articles, arranging events, webinars and marathons for
@@ -116,7 +116,7 @@ import {
                     color={useColorModeValue("yellow.500", "yellow.300")}
                     fontWeight={"500"}
                     textTransform={"uppercase"}
-                    fontFamily={"fantasy"}
+                  
                     mb={"4"}
                   >
                     Social Media
@@ -147,7 +147,7 @@ import {
             <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
               <Stack spacing={0} align={"center"}>
                 <Heading>
-                  <Text fontWeight={1000} fontFamily={"fantasy"}>
+                  <Text fontWeight={1000} >
                     Founder
                   </Text>
                 </Heading>
@@ -169,7 +169,7 @@ import {
                   <Text
                     fontWeight={600}
                     fontSize={"2xl"}
-                    fontFamily={"cursive"}
+                    
                   >
                     Zeel Patel
                   </Text>
@@ -178,7 +178,7 @@ import {
                   fontSize={{ base: "xl", md: "2xl" }}
                   textAlign={"center"}
                   maxW={"4xl"}
-                  fontFamily={"fantasy"}
+              
                 >
                   She founded Girl Up Athena in July of 2020. Girl Up provided
                   her a platform to lead like-minded people working towards

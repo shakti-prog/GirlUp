@@ -26,7 +26,7 @@ const ArticleList = () => {
     <>
       <Nav />
       <Container maxW={"7xl"} p="12">
-        <Heading as="h1" fontFamily={"fantasy"}>
+        <Heading as="h1">
           Blogs by GirlUp Athena
         </Heading>
         {articles.map((art, i) => (
@@ -78,7 +78,6 @@ const ArticleList = () => {
                    fontWeight={800}
                     textDecoration="none"
                     _hover={{ textDecoration: "none" }}
-                    fontFamily={"fantasy"}
                   >
                     {art["Title"].toUpperCase()}
                   </Link>
@@ -90,7 +89,7 @@ const ArticleList = () => {
                   alignItems="center"
                 >
                   <Text>—</Text>
-                  <Text fontFamily={'cursive'} fontWeight={600} fontSize={'large'}>{art["Authors"]}</Text>
+                  <Text  fontWeight={600} fontSize={'large'}>{art["Authors"]}</Text>
                 </HStack>
                 <Text
                   as="p"
@@ -98,7 +97,6 @@ const ArticleList = () => {
                   color={col1}
                   fontSize="xl"
                   noOfLines={5}
-                  fontFamily={"fantasy"}
                 >
                   {art["Content"]}
                 </Text>
@@ -107,7 +105,6 @@ const ArticleList = () => {
                   marginTop={"4"}
                   color={"white"}
                   marginBottom={"4"}
-                  fontFamily={'fantasy'}
                   _hover={{ bg: "blue.500" }}
                   width={"40"}
                   onClick={() => Router.push(`readArticles/${i + 1}`)}

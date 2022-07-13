@@ -57,7 +57,7 @@ export default function WithLargeQuote() {
             >
               <Box mb={{ base: 8, md: 20 }}>
                 <Heading
-                  fontFamily={"fantasy"}
+                 
                   mb={5}
                   color={col2}
                   fontSize={{ base: "3xl", md: "5xl" }}
@@ -71,15 +71,15 @@ export default function WithLargeQuote() {
                   alignItems="center"
                 >
                   <Text>—</Text>
-                  <Text fontFamily={"cursive"} fontSize={"large"} color={col2}>
+                  <Text  fontSize={"large"} color={col2}>
                     {articles[ind - 1]["Authors"]}
                   </Text>
                 </HStack>
                 <Text
                   fontSize={"2xl"}
                   color={col2}
-                  fontFamily={"fantasy"}
-                  marginTop={6}
+                
+                  marginTop={8}
                 >
                   {articles[ind - 1]["Content"]}
                 </Text>
