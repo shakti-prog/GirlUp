@@ -34,6 +34,7 @@ import {
               width={282}
               objectFit={'cover'}
               src={props.path}
+              alt={"Nothing"}
             />
           </Box>
           <Stack align={'center'}>

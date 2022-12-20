@@ -66,12 +66,6 @@ const members = [
      
     },
     {
-        name: 'Harleen Kaur Grewal',
-        role: 'Content Team Member',
-        path: '2021_22/ContentM_4.jpg'
-     
-    },
-    {
         name: 'Dhanashree Lavekar',
         role: 'Content Team Member',
         path: '2021_22/ContentM_5.jpg'

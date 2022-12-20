@@ -165,6 +165,7 @@ import {
                     src={"Founder/Zeel Patel_Founder.jpeg"}
                     boxSize={{ sm: 300, md: 450 }}
                     mb={4}
+                    alt={"Nothing"}
                   />
                   <Text
                     fontWeight={600}
